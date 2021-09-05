@@ -11,12 +11,8 @@
                     v-for="(answer, index) in answers" :key="index"
                     @click="selectAnswer(index)"
                     :class="[selectedIndex === index ? 'selected' : '']"
-                >{{answer}}</b-list-group-item>
+                >{{ answer }}</b-list-group-item>
             </b-list-group>
-
-            <p v-for="(answer, index) in answers" :key="index">
-                
-            </p>
 
             <b-button variant="primary" href="#">Submit</b-button>
             <b-button @click="next" variant="success" href="#">Next</b-button>
